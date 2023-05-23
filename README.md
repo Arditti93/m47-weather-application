@@ -16,11 +16,11 @@
 
 - Start work on the branch and make sure you commit little and often by doing the following
 
-`git add .` 
+- `git add .` 
 
-`git commit -m "commit message"`
+- `git commit -m "commit message"`
 
-`git push`
+- `git push`
 
 - Once the work is complete head to GitHub and create a pull request from the feature branch your working on into the main branch
 
@@ -28,6 +28,8 @@
 
 - Once reviewed merge the pull request into the main branch 
 
-- Head back to VS code, switch to the main branch `git checkout main` 
+- Head back to VS code, switch to the main branch 
 
-Then run `git pull` and your code will be up to date  
+- `git checkout main` 
+
+- Then run `git pull` and your code will be up to date  
