@@ -1,5 +1,6 @@
 import React from "react";
-import {useState} from 'react'
+import {useState} from 'react';
+import Weather from "./components/Weather";
 
 const App = () => {
 
@@ -10,9 +11,19 @@ const App = () => {
   const API_URL =  `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}`
   
   return (
+  <div> 
     <div>
       <h1>M47 Weather App</h1>
     </div>
+    
+    <div className="App">
+      <Weather/>
+
+    </div>
+
+
+
+  </div> 
   );
 };
 
