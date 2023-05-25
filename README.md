@@ -14,6 +14,9 @@
 - Find the branch you are looking for and switch to it using 
 `git checkout {branch name}`
 
+- Pull the lastest changes on the main branch to your working branch
+`git pull origin main`
+
 - Start work on the branch and make sure you commit little and often by doing the following
 
 - `git add .` 
