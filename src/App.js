@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div>
       <h1>M47 Weather App</h1>
+      <p>Hello world</p>
     </div>
   );
 };
