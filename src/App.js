@@ -1,7 +1,6 @@
 import React from "react";
 import {useState} from 'react';
 import Weather from "./components/Weather";
-// import Weather from "./components/Weather";
 
 
 const App = () => {
