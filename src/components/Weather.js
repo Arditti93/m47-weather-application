@@ -2,7 +2,7 @@ import React from "react"
 import { useState } from "react"
 import {setWeather} from "../utils/index"
 import { weatherData } from "../utils/index"
-import { DisplayWeather } from "../utils"
+import DisplayWeather from "./DisplayWeather"
 
 const Weather = () =>  {
     const [city,setCity] = useState();   
@@ -10,14 +10,13 @@ const Weather = () =>  {
 
     const submitHandler = async (event) => {
         event.preventDefault()
-        console.log("!!!!!!!!!!!!!!!")
-        console.log(city)
+        // console.log("!!!!!!!!!!!!!!!")
+        // console.log(city)
         // This will send an alert if the entry box is empty//
         if (city === undefined){
             alert("Please enter a location!")
         } else {
-            weatherData(city,setWeather)
-            // DisplayWeather()
+            await weatherData(city, setWeather)
         }   
     }
 

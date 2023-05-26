@@ -1,7 +1,6 @@
 import React from "react";
 import {useState} from 'react';
 import Weather from "./components/Weather";
-import DisplayWeather from "./components/DisplayWeather"
 
 const App = () => {  
   
@@ -14,7 +13,6 @@ const App = () => {
     
     <div className="App">
       <Weather/>
-      <DisplayWeather/>
     </div>
   </div> 
   );

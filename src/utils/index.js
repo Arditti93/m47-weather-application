@@ -11,21 +11,3 @@ export const weatherData = async (city,setWeather) => {
         console.log(error)
     }
 }
-
-export const DisplayWeather = async (city,setWeather, data) => {
-
-    try { 
-        const response = await fetch (`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${APIKEY}`)
-
-        const data = await response.json()
-        const weather = data.sys.map(sys => sys.main)
-        console.log(weather)
-
-        return weather
-    
-} catch (error) {
-    console.log(error)
-    
-    }
-
-}
