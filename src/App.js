@@ -6,7 +6,7 @@ const App = () => {
   
   return (
   <div> 
-    <div>
+    <div id="openingText">
       <h1>M47 Weather App</h1>
       <p>Enter a City to search for the Weather</p>
     </div>
