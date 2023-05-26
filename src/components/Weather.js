@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react"
 import {setWeather} from "../utils"
 import { weatherData } from "../utils/index"
+import { DisplayWeather } from "../utils"
 
 
 
@@ -17,10 +18,12 @@ const Weather = () =>  {
         event.preventDefault()
         console.log("!!!!!!!!!!!!!!!")
         console.log(city)
+        // This will send an alert if the entry box is empty//
         if (city === undefined){
             alert("Please enter a location!")
         } else {
             weatherData(city,setWeather)
+            // DisplayWeather()
         }
         
     }
@@ -30,6 +33,14 @@ const Weather = () =>  {
                 <input onChange={(event) => setCity(event.target.value)} ></input>
                 <button type="submit">Check Weather</button>
             </form>
+             {/* DEFINING DISPLAY WEATHER SECTION CONTINUE HERE TOMORROW MORNING//  */}
+
+            {
+                weather.data !== undefined ? (
+                    <DisplayWeather data={weather.data}/>
+                ): null
+            }
+            
                 
         </div>
     )
