@@ -3,7 +3,6 @@ import { useState } from "react"
 import {setWeather} from "../utils/index"
 import { weatherData } from "../utils/index"
 import DisplayWeather from "./DisplayWeather"
-import './Weather.css';
 
 const Weather = () =>  {
     const [city,setCity] = useState();   
