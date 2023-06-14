@@ -1,5 +1,4 @@
 import React from "react"
-import { weatherData } from "../utils/index"
 
 function DisplayWeather({data}) { 
 
@@ -12,7 +11,6 @@ function DisplayWeather({data}) {
       <p>Current Weather: {weather[0].main}</p>
       <p>Temperature: {main.temp}</p>
       <p>Feels Like: {main.feels_like}</p>
-      {/* <p>Wind: {wind}</p> */}
       <p>Humidity: {main.humidity}</p>
     </div>
   );
